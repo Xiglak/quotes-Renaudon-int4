@@ -7,6 +7,7 @@ def menu():
     print("2. All quotes")
     print("3. Exit")
     print("4. Add quote")
+    print("5. dispaly quotes")
 
 
 def main():
@@ -22,10 +23,12 @@ def main():
             view_quotes(quotes)
         elif choice == "3":
             print("Good bye...")
+            break
         elif choice == "4":
             x = input("Enter a quote")
             add_quote(x, quotes)
-            break
+        elif (choice == "5"):
+            display_quotes(quotes, x)
         else:
             print("Invalid input")
 
